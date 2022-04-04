@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3a42d894730ba964ea682efdb9e7360d
+timeCreated: 1515724837
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ASCOTA
+  fontNames:
+  - ASCOTA
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1cf51471154301c448d2ae959340109e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

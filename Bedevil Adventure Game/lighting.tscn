@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://storm/lightning1.png" type="Texture" id=1]
+[ext_resource path="res://lighting.gd" type="Script" id=2]
+
+[sub_resource type="Environment" id=1]
+background_mode = 4
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/3 = false
+glow_levels/7 = true
+glow_intensity = 0.7
+glow_strength = 1.68
+glow_bloom = 0.35
+glow_blend_mode = 0
+
+[sub_resource type="Animation" id=2]
+resource_name = "light"
+length = 0.6
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("WorldEnvironment:environment:glow_bloom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.35, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.541176 ), Color( 1, 1, 1, 0.5 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("WorldEnvironment:environment:glow_enabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ true, false ]
+}
+
+[node name="lighting" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.541176 )
+position = Vector2( 0, 55 )
+texture = ExtResource( 1 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Sprite"]
+environment = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/light = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="Sprite"]
+one_shot = true
+autostart = true
+[connection signal="timeout" from="Sprite/Timer" to="." method="_on_Timer_timeout"]

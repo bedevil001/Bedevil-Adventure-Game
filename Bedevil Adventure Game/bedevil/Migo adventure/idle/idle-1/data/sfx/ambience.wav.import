@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ambience.wav-384510797e3b42c0988d752f4527fa20.sample"
+
+[deps]
+
+source_file="res://bedevil/Migo adventure/idle/idle-1/data/sfx/ambience.wav"
+dest_files=[ "res://.import/ambience.wav-384510797e3b42c0988d752f4527fa20.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

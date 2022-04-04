@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pew.wav-2ae39b05be34f57312501ac0d99dfcd5.sample"
+
+[deps]
+
+source_file="res://bedevil/Migo adventure/idle/idle-1/data/sfx/pew.wav"
+dest_files=[ "res://.import/pew.wav-2ae39b05be34f57312501ac0d99dfcd5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

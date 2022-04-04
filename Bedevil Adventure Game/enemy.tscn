@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Pikshu_Pie/idle/3.png" type="Texture" id=1]
+[ext_resource path="res://Pikshu_Pie/idle/4.png" type="Texture" id=2]
+[ext_resource path="res://jared.gd" type="Script" id=3]
+[ext_resource path="res://Pikshu_Pie/idle/1.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+[node name="pika" type="KinematicBody2D"]
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -9.67759, 7.78657 )
+scale = Vector2( 0.482704, 0.629211 )
+frames = SubResource( 1 )
+animation = "idle"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -7.34163, 9.34389 )
+shape = SubResource( 2 )

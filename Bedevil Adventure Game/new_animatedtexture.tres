@@ -1,0 +1,40 @@
+[gd_resource type="AnimatedTexture" load_steps=7 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/1.png-cb23ed6de8e7e03b399921b214320920.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/2.png-4dbba4c209796971826502ad816d1fd9.stex"
+
+[sub_resource type="StreamTexture" id=3]
+flags = 4
+load_path = "res://.import/3.png-d5b78986937b6ae45f7fcb291b82f227.stex"
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+load_path = "res://.import/4.png-d98e850c7b3dd9c8cd580d009feae62c.stex"
+
+[sub_resource type="StreamTexture" id=5]
+flags = 4
+load_path = "res://.import/5.png-05cb974f366af17e5f10f9fa28d828b7.stex"
+
+[sub_resource type="StreamTexture" id=6]
+flags = 4
+load_path = "res://.import/6.png-ebedc1b04645b71c76d2539bd7ba5860.stex"
+
+[resource]
+flags = 4
+frames = 6
+frame_0/texture = SubResource( 1 )
+frame_1/texture = SubResource( 2 )
+frame_1/delay_sec = 0.0
+frame_2/texture = SubResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = SubResource( 4 )
+frame_3/delay_sec = 0.0
+frame_4/texture = SubResource( 5 )
+frame_4/delay_sec = 0.0
+frame_5/texture = SubResource( 6 )
+frame_5/delay_sec = 0.0

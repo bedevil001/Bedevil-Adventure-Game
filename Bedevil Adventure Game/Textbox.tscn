@@ -1,0 +1,92 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://gamepad/left1.png" type="Texture" id=1]
+[ext_resource path="res://gamepad/right2.png" type="Texture" id=2]
+[ext_resource path="res://bedevilbox.png" type="Texture" id=3]
+[ext_resource path="res://chatbox.png" type="Texture" id=4]
+[ext_resource path="res://SHPinscher-Regular.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://gamepad/attackright.png" type="Texture" id=6]
+[ext_resource path="res://gamepad/Sprite-0002.png" type="Texture" id=7]
+[ext_resource path="res://gamepad/jump.png" type="Texture" id=8]
+[ext_resource path="res://Textbox.gd" type="Script" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 13
+outline_color = Color( 0.0941176, 0.796078, 0.984314, 1 )
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 10
+font_data = ExtResource( 5 )
+
+[node name="Textbox" type="Node2D"]
+modulate = Color( 1, 1, 1, 0.584314 )
+script = ExtResource( 9 )
+
+[node name="textbox" type="Sprite" parent="."]
+position = Vector2( 136.221, 62.2114 )
+scale = Vector2( 1.15106, 0.877506 )
+texture = ExtResource( 4 )
+
+[node name="bedevil" type="Sprite" parent="."]
+position = Vector2( 42.4584, 53.0797 )
+scale = Vector2( 0.35573, 0.338496 )
+texture = ExtResource( 3 )
+
+[node name="bedevilname" type="Label" parent="."]
+margin_left = 72.331
+margin_top = 25.636
+margin_right = 124.331
+margin_bottom = 49.636
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.462745, 0.933333, 0.909804, 1 )
+custom_constants/shadow_offset_x = 1
+text = "BEDEVIL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialog" type="Label" parent="."]
+margin_left = 72.0
+margin_top = 39.0
+margin_right = 341.0
+margin_bottom = 105.0
+custom_fonts/font = SubResource( 2 )
+text = "Hello! Adventure try to help bedevil to destroy all 
+Reaper Enemies
+To Run                    To Jump
+To Attack Right         To Attack Left"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="right" type="Sprite" parent="."]
+position = Vector2( 122.152, 77.199 )
+scale = Vector2( 0.725, 0.685 )
+texture = ExtResource( 2 )
+
+[node name="left" type="Sprite" parent="."]
+position = Vector2( 106.92, 77.1855 )
+scale = Vector2( 0.724639, 0.685475 )
+texture = ExtResource( 1 )
+
+[node name="jump" type="Sprite" parent="."]
+position = Vector2( 207.5, 77.5 )
+scale = Vector2( 0.725, 0.685 )
+texture = ExtResource( 8 )
+
+[node name="Attackleft" type="Sprite" parent="."]
+position = Vector2( 134, 93 )
+scale = Vector2( 0.725, 0.685 )
+texture = ExtResource( 7 )
+
+[node name="AttackRight" type="Sprite" parent="."]
+position = Vector2( 209.5, 92.5 )
+scale = Vector2( 0.725, 0.685 )
+texture = ExtResource( 6 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

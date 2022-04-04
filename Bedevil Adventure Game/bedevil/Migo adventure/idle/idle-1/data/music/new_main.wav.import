@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/new_main.wav-052a292ab265b7dda2d1db20323a5ad7.sample"
+
+[deps]
+
+source_file="res://bedevil/Migo adventure/idle/idle-1/data/music/new_main.wav"
+dest_files=[ "res://.import/new_main.wav-052a292ab265b7dda2d1db20323a5ad7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

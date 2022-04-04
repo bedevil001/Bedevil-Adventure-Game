@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/rain_gr.png-82f62d230a34773f5af041f225e6b187.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://storm/rain_gr.png"
+dest_files=[ "res://.import/rain_gr.png-82f62d230a34773f5af041f225e6b187.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

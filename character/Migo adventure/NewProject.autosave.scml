@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0" name="run">
+        <file id="0" name="run/adventurer-run-00.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="run/adventurer-run-01.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="run/adventurer-run-02.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="run/adventurer-run-03.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="run/adventurer-run-04.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="run/adventurer-run-05.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="1" name="attack/New folder">
+        <file id="0" name="attack/New folder/adventurer-attack3-02.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="attack/New folder/adventurer-attack3-03.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="attack/New folder/adventurer-attack3-04.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="attack/New folder/adventurer-attack3-05.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="2" name="attack">
+        <file id="0" name="attack/slash21.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="3" name="fall">
+        <file id="0" name="fall/adventurer-fall-01.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="4" name="idle/idle-1">
+        <file id="0" name="idle/idle-1/adventurer-idle-2-02.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="idle/idle-1/adventurer-idle-21-03.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="5" name="jump">
+        <file id="0" name="jump/adventurer-jump-03.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="jump/adventurer-jump-01.png" width="50" height="37" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="773">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="adventurer-attack3-02">
+                <key id="0" spin="0">
+                    <object folder="1" file="0" x="-34" y="60"/>
+                </key>
+                <key id="1" time="773" spin="0">
+                    <object folder="1" file="0" x="-112" y="120"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="adventurer-fall-01">
+                <key id="0" time="773" spin="0">
+                    <object folder="3" file="0" x="-60" y="111"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="adventurer-idle-21-03">
+                <key id="0" time="773" spin="0">
+                    <object folder="4" file="1" x="-40" y="71"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="adventurer-jump-01">
+                <key id="0" time="773" spin="0">
+                    <object folder="5" file="1" x="-126" y="80"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="adventurer-run-05">
+                <key id="0" time="773" spin="0">
+                    <object folder="0" file="5" x="-92" y="75"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
