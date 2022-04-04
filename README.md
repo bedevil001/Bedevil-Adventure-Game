@@ -6,3 +6,5 @@ located under the ruins of Andalusia and the Greeks, in addition to the presence
 that are in fact trying to ally with him to reach his goal. 
 *This game is still under development, when it is completed, it will be uploaded to the Steam store because it is an individual work that I am fully based on*
 ![wallpaper](https://user-images.githubusercontent.com/78232723/161460532-cb1aee62-1a1c-4366-aed8-06b3f59b0c81.png)
+___________________________U CAN TRY SMALL DEMO (SAMPLE)-------------------------------------
+LINK APK FILE=======>https://www.mediafire.com/file/boxt7pmekr3a3rh/pix.apk/file
