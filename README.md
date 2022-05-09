@@ -1,4 +1,4 @@
-# Bedevil-Adventure-Game
+# Bedevil-Adventure-Game(protoType)
 A Pixel Art Game 
 The story of the game tells about a commanding hero named Bedevil 
 He Acventures into open worlds in search of treasures and knowledge of the secrets and secrets of the unjust monsters 
